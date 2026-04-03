@@ -18,7 +18,7 @@ This project demonstrates automated testing using **Selenium WebDriver** and **p
 ## 📁 Project Structure
 
 ```
-TAREA_4/
+Pruebas-automatizadas/
 │
 ├── app.py                 # Flask application
 ├── database.db           # Local database (ignored in git)
