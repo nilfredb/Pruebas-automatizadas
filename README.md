@@ -45,8 +45,8 @@ TAREA_4/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd TAREA_4
+git clone <https://github.com/nilfredb/Pruebas-automatizadas.git>
+cd Pruebas-automatizadas
 ```
 
 ---
