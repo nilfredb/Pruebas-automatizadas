@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Task</h1>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <p class="message {{ category }}">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <input type="text" name="title" id="edit-task-title" value="{{ task['title'] }}">
+            <textarea name="description" id="edit-task-desc">{{ task['description'] }}</textarea>
+            <button type="submit" id="update-task-btn">Update Task</button>
+        </form>
+
+        <a href="{{ url_for('dashboard') }}">Back</a>
+    </div>
+</body>
+</html>
